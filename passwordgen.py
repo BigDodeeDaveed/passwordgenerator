@@ -1,5 +1,7 @@
 import random
 import string
+import msvcrt
+import sys
 
 characters = list(string.ascii_letters)
 
@@ -16,6 +18,11 @@ def passGen(password = ""):
 def main():
     print("Your password is: ", end="")
     print(passGen())
+    finish = print("Press any key to exit.")
 
+    msvcrt.getch()
+
+    sys.exit()
+    
 if __name__ == "__main__":
     main()
